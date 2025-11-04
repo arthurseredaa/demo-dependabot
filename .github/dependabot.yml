@@ -5,11 +5,25 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    groups:
+      github-actions-patches:
+        update-types:
+          - "patch"
+  
   - package-ecosystem: npm
     directory: "/javascript"
     schedule:
       interval: "weekly"
+    groups:
+      npm-patches:
+        update-types:
+          - "patch"
+  
   - package-ecosystem: bundler
     directory: "/ruby"
     schedule:
       interval: "weekly"
+    groups:
+      bundler-patches:
+        update-types:
+          - "patch"
