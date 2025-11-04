@@ -5,6 +5,9 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    labels:
+      - "dependencies"
+      - "patch"
     groups:
       github-actions-patches:
         update-types:
@@ -14,6 +17,9 @@ updates:
     directory: "/javascript"
     schedule:
       interval: "weekly"
+    labels:
+      - "dependencies"
+      - "patch"
     groups:
       npm-patches:
         update-types:
@@ -23,6 +29,9 @@ updates:
     directory: "/ruby"
     schedule:
       interval: "weekly"
+    labels:
+      - "dependencies"
+      - "patch"
     groups:
       bundler-patches:
         update-types:
